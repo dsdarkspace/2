@@ -1,0 +1,333 @@
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARK SPACE</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #c0392b;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    #hen {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .link-container {
+      display: flex;
+      flex-wrap: wrap; /* للسماح بالتفاف الصور */
+      justify-content: center; /* لمركز الصور في الصفحة */
+      gap: 20px; /* المسافة بين الصور */
+      margin-top: 20px;
+    }
+
+    .link-container a {
+      margin: 10px;
+    }
+
+    .link-container img {
+      width: 200px; /* حجم الصور */
+      height: 200px; /* حجم الصور */
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .search-container {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .search-container input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-container button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #c0392b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    .search-container button:hover {
+      background-color: #a12b24;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://discord.gg/Q5GtUg94dk">DARK SPACE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="ابحث هنا...">
+      <button onclick="search()">بحث</button>
+    </div>
+
+    <div class="link-container">
+      <a href="./call of duty black ops.html">
+        <img src="https://m.media-amazon.com/images/I/716T8bqBQsL._SX342_.jpg" alt="Image 1">
+      </a>      
+      </a>
+      <a href="./call of duty black ops 2.html">
+        <img src="https://m.media-amazon.com/images/I/812leTMAj4L._AC_UF1000,1000_QL80_.jpg" alt="Image 2">
+      </a>
+      <a href="./call of duty black ops 3.html">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Black_Ops_3.jpg" alt="Image 3">
+      </a>
+      <a href="./Uncharted.html">
+        <img src="https://upload.wikimedia.org/wikipedia/ar/1/15/Uncharted-drakes-fortune-ar.jpg" alt="Image 4">
+      </a>
+      <!-- إضافة مسافة بعد الصورة الرابعة -->
+      <div style="width: 100%; height: 20px;"></div>
+      <a href="./Uncharted 2.html">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Uncharted_2_box_artwork.jpg/220px-Uncharted_2_box_artwork.jpg" alt="Image 5">
+      </a>
+      <a href="./Uncharted 3.html">
+        <img src="https://sm.ign.com/t/ign_me/boxart/u/uncharted-3-drakes-deception-playstation-3/uncharted-3-drakes-deception-playstation-3_s9g2.1200.jpg" alt="Image 6">
+      </a>
+      <a href="./Grand Theft Auto IV.html">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Grand_Theft_Auto_IV_cover.jpg" alt="Image 7">
+      </a>
+      <a href="./grand theft auto v.html">
+        <img src="https://images-cdn.ubuy.com.sa/634fc495ef1d5c0b431e3a89-grand-theft-auto-v-ps3.jpg" alt="Image 8">
+      </a>
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./Gran Turismo 5.html">
+            <img src="https://m.media-amazon.com/images/I/71NiDrvRY5L._AC_UF1000,1000_QL80_.jpg" alt="Image 5">
+          </a>
+          <a href="./The Last of Us.html">
+            <img src="https://m.media-amazon.com/images/I/518Jwq9ewNL._SX300_SY300_QL70_FMwebp_.jpg" alt="Image 6">
+          </a>
+          <a href="./Metal Gear Solid 4.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Mgs4us_cover_small.jpg/220px-Mgs4us_cover_small.jpg" alt="Image 7">
+          </a>
+          <a href="./Mortal Kombat.html">
+            <img src="https://romsfun.com/wp-content/uploads/2019/10/mortal-kombat-x-ps3.jpg" alt="Image 8">
+          </a>
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./Modern Warfare 2.html">
+            <img src="https://m.media-amazon.com/images/I/81EonCXB05L._AC_UF894,1000_QL80_.jpg" alt="Image 5">
+          </a>
+          <a href="./Minecraft.html">
+            <img src="https://m.media-amazon.com/images/I/61Mf3u2a9tL.jpg" alt="Image 6">
+          </a>
+          <a href="./Fallout 3.html">
+            <img src="https://i.ebayimg.com/images/g/ltIAAOSwDDRiA9kS/s-l1600.webp" alt="Image 7">
+          </a>
+          <a href="./Red Dead Redemption.html">
+            <img src="https://m.media-amazon.com/images/I/81tWcGL6sAL._AC_UF1000,1000_QL80_.jpg" alt="Image 8">
+          </a>
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./God Of War Collection.html">
+            <img src="https://media.gamestop.com/i/gamestop/10091461/God-of-War-Origins-Collection" alt="Image 5">
+          </a>
+          <a href="./medal of honor.html">
+            <img src="https://m.media-amazon.com/images/I/81Wmhxq3s1S.jpg" alt="Image 6">
+          </a>
+          <a href="./Rayman Legends.html">
+            <img src="https://m.media-amazon.com/images/I/81mOilzyvKL.jpg" alt="Image 7">
+          </a>
+          <a href="./sonic-unleashed.html">
+            <img src="https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/A38B25/540daefce82c41959231fa73f9278746.jpeg/f/sonic-unleashed-essentials.jpeg" alt="Image 8">
+          </a>
+
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./Terraria.html">
+            <img src="https://m.media-amazon.com/images/I/815a-OjJ0SL.jpg" alt="Image 5">
+          </a>
+          <a href="./Evil Dead - A Fistful of Boomstick.html">
+            <img src="https://media.discordapp.net/attachments/1015002420046221373/1248926412585566298/ddd.jpg?ex=6669655c&is=666813dc&hm=7095aa75b85025e685995414196daa0d241678ef56f27ccefc992169c9028a9c&=&format=webp&width=453&height=642" alt="Image 6">
+          </a>
+          <a href="./Barnyard.html">
+            <img src="https://media.discordapp.net/attachments/1015002420046221373/1248926226668720181/image.jpeg?ex=66696530&is=666813b0&hm=fbf41076d2af999524695a55ce228744d10dd705873398c0594dbd8c18aa132e&=&format=webp&width=453&height=635" alt="Image 7">
+          </a>
+          <a href="./Madagascar.html">
+            <img src="https://media.discordapp.net/attachments/1015002420046221373/1248926226442096760/12.jpg?ex=66696530&is=666813b0&hm=fe755a87ce0a498857f4906f63466126472e5e1e827b02371289cac69b60c420&=&format=webp&width=271&height=383" alt="Image 8">
+          </a>
+
+
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./Plants vs. Zombies - Garden Warfare.html">
+            <img src="https://m.media-amazon.com/images/I/91qGp96ofzL._AC_UF894,1000_QL80_.jpg" alt="Image 5">
+          </a>
+          <a href="./Tomb Raider.html">
+            <img src="https://m.media-amazon.com/images/I/91S66uNh8TL.jpg" alt="Image 6">
+          </a>
+          <a href="./Sleeping Dogs.html">
+            <img src="https://m.media-amazon.com/images/I/81db4-sGvbL._AC_UF1000,1000_QL80_.jpg" alt="Image 7">
+          </a>
+          <a href="./Call Of Duty World At War.html">
+            <img src="https://m.media-amazon.com/images/I/71dGUndybrL.jpg" alt="Image 8">
+          </a>
+
+          <!-- إضافة مسافة بعد الصورة الرابعة -->
+          <div style="width: 100%; height: 20px;"></div>
+          <a href="./God Of War III.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/God_of_War_III_cover_art.jpg" alt="Image 5">
+          </a>
+          <a href="./In Famous 2.html">
+            <img src="https://m.media-amazon.com/images/I/91BH4zpg-pL._AC_UF1000,1000_QL80_.jpg" alt="Image 6">
+          </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </main>
+
+  <script>
+    function search() {
+      const pages = {
+        'call of duty black ops': 'call of duty black ops.html',
+        'call of duty black ops 2': 'call of duty black ops 2.html',
+        'call of duty black ops 3': 'call of duty black ops 3.html',
+        'red dead redemption'  :  'Red Dead Redemption.html',
+        'uncharted'  :  'Uncharted 3.html',
+        'uncharted 3'  :  'Uncharted 3.html',
+        'uncharted 2'  :  'Uncharted 2.html',
+        'grand theft auto iv'  :  'Grand Theft Auto IV.html',
+        'grand theft auto v'  :  'grand theft auto v.html',
+        'gran turismo 5'  :  'Gran Turismo 5.html',
+        'the last of us'  :  'The Last of Us.html',
+        'metal gear solid 4'  :  'Metal Gear Solid 4.html',
+        'mortal kombat'  :  'Mortal Kombat.html',
+        'modern warfare 2'  :  'Modern Warfare 2.html',
+        'minecraft'  :  'Minecraft.html',
+        'god of war collection'  :  'God Of War Collection.html',
+        'medal of honor'  :  'medal of honor.html',
+        'rayman legends'  :  'Rayman Legends.html',
+        'sonic unleashed'  :  'sonic-unleashed.html',
+        'fallout 3'  :  'Fallout 3.html',
+        'terraria'  :  'Terraria.html',
+        'madagascar'  :  'Madagascar.html',
+        'barnyard'  :  'Barnyard.html',
+        'evil dead a fistful of boomstick'  :  'Evil Dead - A Fistful of Boomstick.html',
+        'plants vs zombies garden warfare'  :  'Plants vs. Zombies - Garden Warfare.html',
+        'tomb raider'  :  'Tomb Raider.html',
+        'sleeping dogs'  :  'Sleeping Dogs.html',
+        'god of war iii'  :  'God Of War III.html',
+        'in famous 2'  :  'In Famous 2.html',
+        'call of duty world at war'  :  'Call Of Duty World At War.html'
+
+
+
+
+
+
+      };
+  
+      const input = document.getElementById('search-input').value; 
+      
+      if (input.toLowerCase() in pages) { 
+        window.location.href = pages[input.toLowerCase()]; 
+      } else {
+        alert('لا توجد نتائج مطابقة');
+      }
+    }
+</script>
+
+  
+</body>
+</html>

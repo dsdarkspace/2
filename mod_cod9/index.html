@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARK SPACE</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #c0392b;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    #hen {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .link-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .link-container a {
+      background-color: #c0392b;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-container a:hover {
+      background-color: #a12b24;
+    }
+
+    .link-container a:active {
+      background-color: #822018;
+    }
+  </style>
+  <script>
+    var clickCounts = {
+      button1: 0,
+      button2: 0,
+      button3: 0,
+      button4: 0,
+      button5: 0,
+      button6: 0,
+      button7: 0,
+
+    };
+
+    function handleButtonClick(buttonId, file1, file2) {
+      clickCounts[buttonId]++;
+      if (clickCounts[buttonId] === 1) {
+        window.location.href = file1;
+      } else if (clickCounts[buttonId] === 2) {
+        window.location.href = file2;
+        clickCounts[buttonId] = 0; // Reset click count after the second click
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <center>
+    <h1>Press each button to download different files</h1>
+
+    <main>
+      <section id="downloads">
+        <div class="link-container">
+          <a href="#" onclick="handleButtonClick('button1', 'http://github.com/Siverslayer/just-files/blob/main/Ghenisys_HEN_Sprx/EBOOT.BIN.p3t', 'http://github.com/Siverslayer/just-files/blob/main/Ghenisys_HEN_Sprx/Genisys.sprx.p3t')">Ghenisys</a>
+          <a href="#" onclick="handleButtonClick('button2', 'http://github.com/Siverslayer/just-files/blob/main/Perxy_V3_Hen_SPRX/Perxy%20V3%20Hen/EBOOT.BIN.p3t', 'http://github.com/Siverslayer/just-files/blob/main/Perxy_V3_Hen_SPRX/Perxy%20V3%20Hen/Perxy.sprx.p3t')">Perxy V3 Hen</a>
+          <a href="#" onclick="handleButtonClick('button3', './path/to/file2a.zip', './path/to/file2b.zip')">SOON</a>
+          <a href="#" onclick="handleButtonClick('button4', './path/to/file3a.zip', './path/to/file3b.zip')">SOON</a>
+          <a href="#" onclick="handleButtonClick('button5', './path/to/file4a.zip', './path/to/file4b.zip')">SOON</a>
+          <a href="#" onclick="handleButtonClick('button6', './path/to/file5a.zip', './path/to/file5b.zip')">SOON</a>
+        </div>
+      </section>
+    </main>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
